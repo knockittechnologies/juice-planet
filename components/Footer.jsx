@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 export default function Footer() {
   return (
     <div className={`stage ${styles.wrap}`}>
-      <img className={styles.img} src="/images/footer.png" alt="Footer" />
+      <img className={styles.img} src="/images/footer.webp" alt="Footer" />
       <nav className={styles.overlay} aria-label="Footer">
         <a href="#juice" className={styles.menu}>Menu</a>
         <a href="#app" className={styles.app}>The App</a>

@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`stage ${styles.navWrap}`}>
-        <img className={styles.navImg} src="/images/nav.png" alt="Juice Planet Navigation" />
+        <img className={styles.navImg} src="/images/nav.webp" alt="Juice Planet Navigation" />
 
         <nav className={styles.overlay} aria-label="Primary">
           <a href="#about" className={styles.about}>

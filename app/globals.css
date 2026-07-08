@@ -52,13 +52,13 @@ a {
   padding: 0 32px;
 }
 
-/* Caps full-bleed artwork sections at their native resolution (1953px, the
-   narrowest asset) so the browser never upscales them past source quality.
-   Centered with matching page background, so it reads as full-width on
-   every normal monitor and only shows a (colour-matched, invisible) margin
-   on ultra-wide screens beyond ~1953px. */
+/* Caps full-bleed artwork sections at their native resolution (5859px, the
+   narrowest asset after 3x upscaling) so the browser never stretches them
+   past source quality. Centered with matching page background, so it reads
+   as full-width on every normal and high-DPI monitor, only showing a
+   (colour-matched, invisible) margin on displays wider than ~5859px. */
 .stage {
-  max-width: 1953px;
+  max-width: 5859px;
   margin: 0 auto;
   width: 100%;
 }

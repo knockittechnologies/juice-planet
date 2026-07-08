@@ -3,7 +3,7 @@ import styles from './AppPromo.module.css';
 export default function AppPromo() {
   return (
     <section id="app" className={`stage ${styles.appWrap}`} aria-label="Get the app">
-      <img className={styles.img} src="/images/the-app.png" alt="The Juice Planet app" />
+      <img className={styles.img} src="/images/the-app.webp" alt="The Juice Planet app" />
       <a
         className={styles.appStore}
         href="https://apps.apple.com/search?term=juice+planet"
