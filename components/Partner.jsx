@@ -44,7 +44,7 @@ export default function Partner() {
   }
 
   return (
-    <div id="partner" className={styles.wrap}>
+    <div id="partner" className={`stage ${styles.wrap}`}>
       <img className={styles.img} src="/images/partner.png" alt="Partner With Us" />
       <form className={styles.overlay} onSubmit={handleSubmit}>
         <input type="text" name="name" className={`${styles.field} ${styles.name}`} required aria-label="Name" />

@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.navWrap}>
+      <div className={`stage ${styles.navWrap}`}>
         <img className={styles.navImg} src="/images/nav.png" alt="Juice Planet Navigation" />
 
         <nav className={styles.overlay} aria-label="Primary">

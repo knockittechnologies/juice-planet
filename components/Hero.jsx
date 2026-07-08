@@ -2,7 +2,7 @@ import styles from './Hero.module.css';
 
 export default function Hero() {
   return (
-    <div id="top" className={styles.hero}>
+    <div id="top" className={`stage ${styles.hero}`}>
       <img className={styles.heroBg} src="/images/hero-bg.png" alt="" />
 
       <div className={styles.titleBlock}>
