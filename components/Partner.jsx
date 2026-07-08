@@ -3,15 +3,6 @@
 import { useState } from 'react';
 import styles from './Partner.module.css';
 
-const TAGS = [
-  'Run Clubs',
-  'Padel Clubs',
-  'Sponsorships',
-  'Events & Pop-ups',
-  'Wholesale & Stockists',
-  'Franchise & Partnership',
-];
-
 // SETUP (one-time, ~2 minutes): create a free form at https://formspree.io,
 // verify the destination email you want submissions delivered to, then
 // replace the placeholder below with your real form endpoint ID.
@@ -53,77 +44,33 @@ export default function Partner() {
   }
 
   return (
-    <section id="partner" className={styles.partner} aria-label="Partner with us">
-      <div className={`wrap ${styles.grid}`}>
-        <div className={styles.copy}>
-          <span className="eyebrow on-purple">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z" />
-            </svg>
-            Partner With Us
-          </span>
-          <h2 className="pixel-heading">Let&rsquo;s build something together.</h2>
-          <p>
-            We love teaming up with people who move. Whether you want us pouring at your event,
-            fuelling your run club or sponsoring your next match, drop us a line and we will come
-            back to you fast.
-          </p>
-          <div className={styles.tags}>
-            {TAGS.map((t) => (
-              <span key={t} className={styles.tag}>
-                {t}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <form className={styles.form} onSubmit={handleSubmit}>
-          <div className={styles.field}>
-            <label htmlFor="p-name">Name</label>
-            <input id="p-name" name="name" type="text" required />
-          </div>
-          <div className={styles.field}>
-            <label htmlFor="p-club">Club / company</label>
-            <input id="p-club" name="club" type="text" placeholder="e.g. Ealing Run Club" />
-          </div>
-          <div className={styles.split}>
-            <div className={styles.field}>
-              <label htmlFor="p-email">Email</label>
-              <input id="p-email" name="email" type="email" required />
-            </div>
-            <div className={styles.field}>
-              <label htmlFor="p-phone">Phone</label>
-              <input id="p-phone" name="phone" type="tel" />
-            </div>
-          </div>
-          <div className={styles.field}>
-            <label htmlFor="p-about">What&rsquo;s this about?</label>
-            <select id="p-about" name="about" defaultValue="Sponsorships">
-              {TAGS.map((t) => (
-                <option key={t} value={t}>
-                  {t}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className={styles.field}>
-            <label htmlFor="p-message">Tell us more</label>
-            <textarea
-              id="p-message"
-              name="message"
-              rows={4}
-              placeholder="Numbers, dates, what you have in mind. The more detail the better"
-              required
-            />
-          </div>
-          <button type="submit" className="btn btn-primary" disabled={status.state === 'sending'}>
-            Send It Over
-          </button>
-          <p className={`${styles.status} ${styles[status.state] || ''}`} role="status">
-            {status.message}
-          </p>
-        </form>
-      </div>
-    </section>
+    <div id="partner" className={styles.wrap}>
+      <img className={styles.img} src="/images/partner.png" alt="Partner With Us" />
+      <form className={styles.overlay} onSubmit={handleSubmit}>
+        <input type="text" name="name" className={`${styles.field} ${styles.name}`} required aria-label="Name" />
+        <input type="text" name="club" className={`${styles.field} ${styles.club}`} placeholder="e.g. Ealing Run Club" aria-label="Club or company" />
+        <input type="email" name="email" className={`${styles.field} ${styles.email}`} required aria-label="Email" />
+        <input type="tel" name="phone" className={`${styles.field} ${styles.phone}`} aria-label="Phone" />
+        <select name="about" className={`${styles.field} ${styles.about}`} defaultValue="Sponsorships" aria-label="What's this about">
+          <option value="Run Clubs">Run Clubs</option>
+          <option value="Padel Clubs">Padel Clubs</option>
+          <option value="Sponsorships">Sponsorships</option>
+          <option value="Events & Pop-ups">Events & Pop-ups</option>
+          <option value="Wholesale & Stockists">Wholesale & Stockists</option>
+          <option value="Franchise & Partnership">Franchise & Partnership</option>
+        </select>
+        <textarea
+          name="message"
+          className={`${styles.field} ${styles.message}`}
+          placeholder="Numbers, dates, what you have in mind. The more detail the better"
+          required
+          aria-label="Tell us more"
+        />
+        <button type="submit" className={styles.submit} aria-label="Send it over"></button>
+        <p className={`${styles.status} ${styles[status.state] || ''}`} role="status">
+          {status.message}
+        </p>
+      </form>
+    </div>
   );
 }
