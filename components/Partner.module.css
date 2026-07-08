@@ -1,0 +1,106 @@
+.partner {
+  background: var(--bg-deep);
+  padding: 100px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.copy h2 {
+  font-size: clamp(24px, 3.6vw, 38px);
+  margin: 20px 0 20px;
+  line-height: 1.5;
+}
+
+.copy p {
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin: 0 0 28px;
+  max-width: 480px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+  padding: 8px 14px;
+  color: var(--text-dim);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.split {
+  display: flex;
+  gap: 14px;
+}
+
+.split .field {
+  flex: 1;
+}
+
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-dim);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 10px;
+  border: none;
+  background: var(--lavender-field);
+  color: #1b0033;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 3px solid var(--lime);
+}
+
+.status {
+  min-height: 20px;
+  font-size: 13px;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.status.ok {
+  color: var(--lime);
+}
+
+.status.error {
+  color: var(--orange);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .split {
+    flex-direction: column;
+  }
+}

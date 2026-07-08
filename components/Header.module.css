@@ -1,0 +1,164 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(18, 0, 31, 0.86);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 30%, #d9ff7a, var(--lime) 55%, #5f8f10 100%);
+  box-shadow: 0 0 0 3px rgba(155, 221, 27, 0.18);
+  position: relative;
+}
+
+.dot::after {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 47%;
+  width: 38px;
+  height: 7px;
+  border: 2px solid rgba(242, 237, 255, 0.55);
+  border-radius: 50%;
+  transform: rotate(-18deg);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-dim);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  transition: color 0.15s ease, background 0.15s ease;
+  white-space: nowrap;
+}
+
+.nav a:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.cta {
+  color: #12240a !important;
+  background: var(--orange);
+  margin-left: 6px;
+}
+
+.cta:hover {
+  background: #ffa563 !important;
+}
+
+.shopMerch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--lime);
+  color: #12240a;
+  border: none;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 11px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.shopMerch:hover {
+  background: #b3f22c;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 760px) {
+  .shopMerch span {
+    display: none;
+  }
+}
+
+.toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.toggle span {
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+}
+
+@media (max-width: 760px) {
+  .nav {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    background: var(--bg-deep);
+    padding: 10px 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: none;
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 14px 16px;
+  }
+
+  .cta {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .toggle {
+    display: flex;
+  }
+}
