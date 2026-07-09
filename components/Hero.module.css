@@ -3,9 +3,22 @@
   width: 100%;
 }
 
+.frame {
+  position: relative;
+  width: 100%;
+}
+
 .img {
   width: 100%;
   display: block;
+}
+
+.desktopOnly {
+  display: block;
+}
+
+.mobileOnly {
+  display: none;
 }
 
 .navOverlay {
@@ -58,4 +71,37 @@
   width: 10.48%;
   top: 81.13%;
   height: 5.23%;
+}
+
+/* Mobile CTA positions recalculated for the cropped hero-mobile image
+   (top 11.5% of the original removed, so vertical percentages shift) */
+.ctaOrderMobile,
+.ctaMenuMobile {
+  position: absolute;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.ctaOrderMobile {
+  left: 37.57%;
+  width: 12.64%;
+  top: 78.83%;
+  height: 5.64%;
+}
+
+.ctaMenuMobile {
+  left: 51.67%;
+  width: 10.48%;
+  top: 78.70%;
+  height: 5.91%;
+}
+
+@media (max-width: 860px) {
+  .desktopOnly {
+    display: none;
+  }
+  .mobileOnly {
+    display: block;
+  }
 }

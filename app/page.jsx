@@ -1,3 +1,4 @@
+import MobileNav from '@/components/MobileNav';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import JuiceMenu from '@/components/JuiceMenu';
@@ -9,6 +10,7 @@ import Footer from '@/components/Footer';
 export default function HomePage() {
   return (
     <>
+      <MobileNav />
       <main className="section-stack">
         <Hero />
         <Features />

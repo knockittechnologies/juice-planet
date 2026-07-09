@@ -71,3 +71,113 @@ textarea.field {
 .status.error {
   color: var(--orange);
 }
+
+/* ── Desktop/mobile toggle ── */
+.desktopOnly {
+  position: relative;
+  width: 100%;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .desktopOnly {
+    display: none;
+  }
+  .mobileOnly {
+    display: block;
+    padding: 48px 20px;
+  }
+}
+
+/* ── Mobile form styles ── */
+.mEyebrow {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(160, 110, 255, 0.25);
+  border: 1px solid rgba(200, 170, 255, 0.4);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  color: var(--lavender-field);
+}
+
+.mHeading {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 6vw, 28px);
+  line-height: 1.5;
+  margin: 18px 0 14px;
+  color: var(--text);
+}
+
+.mLead {
+  color: var(--text-dim);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+
+.mForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mField label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-dim);
+}
+
+.mField input,
+.mField select,
+.mField textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 10px;
+  border: none;
+  background: var(--lavender-field);
+  color: #1b0033;
+  font-size: 16px;
+  font-family: 'Gilroy', 'Poppins', sans-serif;
+  font-weight: 500;
+  resize: vertical;
+}
+
+.mField input:focus,
+.mField select:focus,
+.mField textarea:focus {
+  outline: 3px solid var(--lime);
+}
+
+.mSubmit {
+  background: var(--lime);
+  color: #12240a;
+  border: none;
+  font-family: var(--font-display);
+  font-size: 12px;
+  padding: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.mStatus {
+  min-height: 20px;
+  font-size: 13px;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.mStatus.ok {
+  color: var(--lime);
+}
+
+.mStatus.error {
+  color: var(--orange);
+}
