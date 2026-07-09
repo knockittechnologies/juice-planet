@@ -8,6 +8,36 @@
   display: block;
 }
 
+.navOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.navOverlay a,
+.navOverlay span,
+.navOverlay button {
+  position: absolute;
+  top: 4.5%;
+  height: 3.5%;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navOverlay span {
+  cursor: default;
+}
+
+.navAbout    { left: 34.50%; width: 5.45%; }
+.navJuices   { left: 42.43%; width: 4.03%; }
+.navStore    { left: 48.94%; width: 8.66%; }
+.navContact  { left: 60.03%; width: 4.87%; }
+.navShopMerch{ left: 86.18%; width: 11.65%; top: 3.71%; height: 5.02%; }
+
 .ctaOrder,
 .ctaMenu {
   position: absolute;
@@ -28,36 +58,4 @@
   width: 10.48%;
   top: 81.13%;
   height: 5.23%;
-}
-
-.planetOrange {
-  position: absolute;
-  left: 17.7%;
-  top: 29.4%;
-  width: 6.7%;
-  height: auto;
-  animation: spin 22s linear infinite;
-  transform-origin: 50% 50%;
-}
-
-.planetSaturn {
-  position: absolute;
-  left: 73.4%;
-  top: 77.8%;
-  width: 12.9%;
-  height: auto;
-  animation: spin 38s linear infinite reverse;
-  transform-origin: 50% 50%;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .planetOrange,
-  .planetSaturn {
-    animation: none;
-  }
 }
