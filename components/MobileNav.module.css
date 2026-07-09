@@ -13,18 +13,14 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: 8px;
   color: var(--text);
   text-decoration: none;
-  font-family: var(--font-display);
-  font-size: 12px;
 }
 
-.dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 32% 30%, #d9ff7a, var(--lime) 55%, #5f8f10 100%);
+.brandLogo {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .actions {
@@ -84,7 +80,9 @@
   padding: 16px 20px;
   color: var(--text);
   text-decoration: none;
+  font-family: var(--font-body);
   font-weight: 600;
+  font-size: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 

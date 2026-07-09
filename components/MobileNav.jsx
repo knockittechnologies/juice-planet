@@ -18,8 +18,7 @@ export default function MobileNav() {
     <>
       <header className={styles.bar}>
         <a href="#top" className={styles.brand}>
-          <span className={styles.dot} aria-hidden="true" />
-          Juice Planet
+          <img src="/images/logo.png" alt="Juice Planet" className={styles.brandLogo} />
         </a>
         <div className={styles.actions}>
           <button
