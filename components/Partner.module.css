@@ -34,19 +34,19 @@ textarea.field {
   resize: none;
 }
 
-.name    { left: 56.67%; width: 33.24%; top: 19.77%; height: 5.15%; }
-.club    { left: 56.67%; width: 33.24%; top: 29.77%; height: 5.15%; }
-.email   { left: 56.67%; width: 15.95%; top: 39.77%; height: 5.15%; }
-.phone   { left: 73.97%; width: 15.94%; top: 39.77%; height: 5.15%; }
-.about   { left: 56.67%; width: 33.24%; top: 49.77%; height: 5.61%; }
-.message { left: 56.67%; width: 33.24%; top: 60.23%; height: 15.15%; }
+.name    { left: 57.81%; width: 33.26%; top: 3.90%;  height: 7.48%; }
+.club    { left: 57.81%; width: 33.26%; top: 17.91%; height: 7.48%; }
+.email   { left: 57.81%; width: 16.04%; top: 31.91%; height: 7.49%; }
+.phone   { left: 75.04%; width: 16.04%; top: 31.91%; height: 7.49%; }
+.about   { left: 57.81%; width: 33.26%; top: 45.92%; height: 8.12%; }
+.message { left: 57.81%; width: 33.26%; top: 60.57%; height: 21.48%; }
 
 .submit {
   position: absolute;
-  left: 56.67%;
-  width: 9.72%;
-  top: 78.41%;
-  height: 4.62%;
+  left: 57.84%;
+  width: 9.79%;
+  top: 86.11%;
+  height: 6.69%;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -55,9 +55,9 @@ textarea.field {
 
 .status {
   position: absolute;
-  left: 56.67%;
-  width: 33.24%;
-  top: 84%;
+  left: 57.81%;
+  width: 33.26%;
+  top: 94%;
   font-size: clamp(9px, 1.2vw, 13px);
   color: var(--text-dim);
   margin: 0;

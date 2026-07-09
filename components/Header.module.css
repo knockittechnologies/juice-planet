@@ -24,8 +24,8 @@
 .overlay span,
 .overlay button {
   position: absolute;
-  top: 10%;
-  height: 80%;
+  top: 16%;
+  height: 30%;
   display: block;
   text-indent: -9999px;
   overflow: hidden;
@@ -40,28 +40,28 @@
 }
 
 .about {
-  left: 28%;
-  width: 11.79%;
+  left: 32.34%;
+  width: 6.05%;
 }
 
 .juices {
-  left: 39.79%;
-  width: 7.21%;
+  left: 41.06%;
+  width: 4.49%;
 }
 
 .store {
-  left: 47%;
-  width: 12.27%;
+  left: 48.27%;
+  width: 9.6%;
 }
 
 .contact {
-  left: 59.27%;
-  width: 9.85%;
+  left: 60.54%;
+  width: 5.39%;
 }
 
 .shopMerch {
-  left: 84.33%;
-  width: 12.75%;
-  top: 20%;
-  height: 60%;
+  left: 84.18%;
+  width: 12.9%;
+  top: 22.14%;
+  height: 17.69%;
 }

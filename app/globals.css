@@ -52,13 +52,14 @@ a {
   padding: 0 32px;
 }
 
-/* Caps full-bleed artwork sections at their native resolution (5859px, the
-   narrowest asset after 3x upscaling) so the browser never stretches them
-   past source quality. Centered with matching page background, so it reads
-   as full-width on every normal and high-DPI monitor, only showing a
-   (colour-matched, invisible) margin on displays wider than ~5859px. */
+/* Caps full-bleed artwork sections at 5760px — the consistent native width
+   of the fresh Figma exports (1440px design × 4x). Centered with matching
+   page background, so it reads as full-width on every normal and high-DPI
+   monitor, only showing a (colour-matched, invisible) margin on displays
+   wider than ~5760px. Hero/Footer are still on the older higher-res assets
+   and will simply render below their own ceiling, which is fine. */
 .stage {
-  max-width: 5859px;
+  max-width: 5760px;
   margin: 0 auto;
   width: 100%;
 }
