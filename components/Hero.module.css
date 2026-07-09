@@ -29,3 +29,35 @@
   top: 81.13%;
   height: 5.23%;
 }
+
+.planetOrange {
+  position: absolute;
+  left: 17.7%;
+  top: 29.4%;
+  width: 6.7%;
+  height: auto;
+  animation: spin 22s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+.planetSaturn {
+  position: absolute;
+  left: 73.4%;
+  top: 77.8%;
+  width: 12.9%;
+  height: auto;
+  animation: spin 38s linear infinite reverse;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .planetOrange,
+  .planetSaturn {
+    animation: none;
+  }
+}

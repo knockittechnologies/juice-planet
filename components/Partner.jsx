@@ -6,7 +6,7 @@ import styles from './Partner.module.css';
 // SETUP (one-time, ~2 minutes): create a free form at https://formspree.io,
 // verify the destination email you want submissions delivered to, then
 // replace the placeholder below with your real form endpoint ID.
-const FORMSPREE_ID = 'YOUR_FORM_ID';
+const FORMSPREE_ID = 'mjgqqjgj';
 
 export default function Partner() {
   const [status, setStatus] = useState({ state: 'idle', message: '' });
