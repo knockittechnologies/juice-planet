@@ -1,0 +1,72 @@
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.field {
+  position: absolute;
+  box-sizing: border-box;
+  border: none;
+  background: rgb(238, 233, 255);
+  color: #1b0033;
+  font-family: inherit;
+  font-size: clamp(9px, 1.35vw, 15px);
+  padding: 0.6% 2%;
+  line-height: 1.3;
+}
+
+.field:focus {
+  outline: 2px solid var(--lime);
+  outline-offset: 1px;
+}
+
+textarea.field {
+  resize: none;
+}
+
+.name    { left: 57.81%; width: 33.26%; top: 3.90%;  height: 7.48%; }
+.club    { left: 57.81%; width: 33.26%; top: 17.91%; height: 7.48%; }
+.email   { left: 57.81%; width: 16.04%; top: 31.91%; height: 7.49%; }
+.phone   { left: 75.04%; width: 16.04%; top: 31.91%; height: 7.49%; }
+.about   { left: 57.81%; width: 33.26%; top: 45.92%; height: 8.12%; }
+.message { left: 57.81%; width: 33.26%; top: 60.57%; height: 21.48%; }
+
+.submit {
+  position: absolute;
+  left: 57.84%;
+  width: 9.79%;
+  top: 86.11%;
+  height: 6.69%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.status {
+  position: absolute;
+  left: 57.81%;
+  width: 33.26%;
+  top: 94%;
+  font-size: clamp(9px, 1.2vw, 13px);
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.status.ok {
+  color: var(--lime);
+}
+
+.status.error {
+  color: var(--orange);
+}

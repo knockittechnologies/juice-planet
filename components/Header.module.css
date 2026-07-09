@@ -1,0 +1,67 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navWrap {
+  position: relative;
+  width: 100%;
+}
+
+.navImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.overlay a,
+.overlay span,
+.overlay button {
+  position: absolute;
+  top: 16%;
+  height: 30%;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.overlay span {
+  cursor: default;
+}
+
+.about {
+  left: 32.34%;
+  width: 6.05%;
+}
+
+.juices {
+  left: 41.06%;
+  width: 4.49%;
+}
+
+.store {
+  left: 48.27%;
+  width: 9.6%;
+}
+
+.contact {
+  left: 60.54%;
+  width: 5.39%;
+}
+
+.shopMerch {
+  left: 84.18%;
+  width: 12.9%;
+  top: 22.14%;
+  height: 17.69%;
+}
