@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Baloo+2:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap');
 
 :root {
   --bg: #1b0033;
@@ -52,15 +52,10 @@ a {
   padding: 0 32px;
 }
 
-/* Caps full-bleed artwork sections at 5760px — the consistent native width
-   of the fresh Figma exports (1440px design × 4x). Centered with matching
-   page background, so it reads as full-width on every normal and high-DPI
-   monitor, only showing a (colour-matched, invisible) margin on displays
-   wider than ~5760px. Hero/Footer are still on the older higher-res assets
-   and will simply render below their own ceiling, which is fine. */
+/* Sections render fully edge-to-edge now that every asset is high-res
+   enough (5760px+) that this no longer risks visible upscaling on all but
+   the largest displays. */
 .stage {
-  max-width: 5760px;
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -70,7 +65,7 @@ a {
 .section-stack {
   display: flex;
   flex-direction: column;
-  gap: clamp(40px, 6vw, 110px);
+  gap: clamp(60px, 9vw, 160px);
 }
 
 @media (max-width: 720px) {

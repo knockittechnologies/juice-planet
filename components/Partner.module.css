@@ -19,9 +19,10 @@
   border: none;
   background: rgb(238, 233, 255);
   color: #1b0033;
-  font-family: inherit;
-  font-size: clamp(9px, 1.35vw, 15px);
-  padding: 0.6% 2%;
+  font-family: 'Gilroy', 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.6% 1%;
   line-height: 1.3;
 }
 
