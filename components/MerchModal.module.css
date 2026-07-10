@@ -1,0 +1,62 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 0, 20, 0.72);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.15s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: min(760px, 92vw);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  animation: pop 0.18s ease;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.94);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+/* invisible hit-target placed exactly over the X icon already drawn in the artwork */
+.close {
+  position: absolute;
+  left: 89.5%;
+  top: 4.4%;
+  width: 6.3%;
+  height: 8%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: transparent;
+  font-size: 0;
+}

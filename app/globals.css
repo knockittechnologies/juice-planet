@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #1b0033;
+  --bg-deep: #12001f;
+  --panel: #2c0a56;
+  --panel-line: rgba(255, 255, 255, 0.14);
+  --lime: #9bdd1b;
+  --lime-dark: #7fb914;
+  --orange: #ff8a3d;
+  --text: #f5f1ff;
+  --text-dim: #bcaee0;
+  --lavender-field: #ebe6ff;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --font-display: 'Press Start 2P', monospace;
+  --font-body: 'Baloo 2', system-ui, sans-serif;
+  --content-max: 1360px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+a {
+  color: inherit;
+}
+
+.wrap {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Sections render fully edge-to-edge now that every asset is high-res
+   enough (5760px+) that this no longer risks visible upscaling on all but
+   the largest displays. */
+.stage {
+  width: 100%;
+}
+
+/* Consistent breathing room between major page sections. Since every
+   section already shares the same purple page background, the gap just
+   reads as more background — no visible seam or color break. */
+.section-stack {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(60px, 9vw, 160px);
+}
+
+.desktopOnlyBlock,
+.mobileOnlyBlock {
+  width: 100%;
+  display: block;
+}
+
+.mobileOnlyBlock {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .desktopOnlyBlock {
+    display: none;
+  }
+  .mobileOnlyBlock {
+    display: block;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrap {
+    padding: 0 20px;
+  }
+}
+
+.pixel-heading {
+  font-family: var(--font-display);
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--lavender-field);
+}
+
+.eyebrow.on-purple {
+  background: rgba(160, 110, 255, 0.25);
+  border-color: rgba(200, 170, 255, 0.4);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 16px 28px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--lime);
+  color: #12240a;
+}
+
+.btn-primary:hover {
+  background: #b3f22c;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-outline:hover {
+  border-color: var(--lime);
+  background: rgba(155, 221, 27, 0.08);
+}
+
+section {
+  position: relative;
+}
+
+:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
