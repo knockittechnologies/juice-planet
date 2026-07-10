@@ -68,6 +68,12 @@ a {
   gap: clamp(60px, 9vw, 160px);
 }
 
+.desktopOnlyBlock,
+.mobileOnlyBlock {
+  width: 100%;
+  display: block;
+}
+
 .mobileOnlyBlock {
   display: none;
 }

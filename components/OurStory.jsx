@@ -4,13 +4,11 @@ export default function OurStory() {
       <img
         src="/images/our-story.webp"
         alt="Our Story — A family idea blended in West London"
-        style={{ width: '100%', display: 'block' }}
         className="desktopOnlyBlock"
       />
       <img
         src="/images/ourstory-mobile.webp"
         alt="Our Story — A family idea blended in West London"
-        style={{ width: '100%', display: 'block' }}
         className="mobileOnlyBlock"
       />
     </section>
