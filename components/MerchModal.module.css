@@ -31,6 +31,12 @@
   animation: pop 0.18s ease;
 }
 
+@media (min-width: 861px) {
+  .card {
+    max-width: min(1520px, 90vw);
+  }
+}
+
 @keyframes pop {
   from {
     transform: scale(0.94);
