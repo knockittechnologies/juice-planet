@@ -28,10 +28,7 @@ export default function MobileNav() {
               onClick={() => setMerchOpen(true)}
               aria-label="Shop merch"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M6 7h12l1 13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z" />
-                <path d="M9 7a3 3 0 0 1 6 0" />
-              </svg>
+              <img src="/images/icon-shop.png" alt="" className={styles.iconImg} />
             </button>
             <button
               type="button"
@@ -40,9 +37,7 @@ export default function MobileNav() {
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
             >
-              <span />
-              <span />
-              <span />
+              <img src="/images/icon-menu.png" alt="" className={styles.iconImg} />
             </button>
           </div>
         </header>

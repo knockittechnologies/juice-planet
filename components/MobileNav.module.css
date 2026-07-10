@@ -53,20 +53,18 @@
   width: 38px;
   height: 38px;
   border-radius: 9px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--lime);
   border: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
 }
 
-.toggle span {
-  width: 18px;
-  height: 2px;
-  background: var(--text);
-  border-radius: 2px;
+.iconImg {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
 }
 
 .menu {
