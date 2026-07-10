@@ -27,3 +27,43 @@
   top: 68.42%;
   height: 10.65%;
 }
+
+.desktopOnly {
+  position: relative;
+  width: 100%;
+}
+
+.mobileOnly {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.appStoreMobile,
+.googlePlayMobile {
+  position: absolute;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 87.95%;
+  height: 3.49%;
+}
+
+.appStoreMobile {
+  left: 11.90%;
+  width: 35.78%;
+}
+
+.googlePlayMobile {
+  left: 52.48%;
+  width: 35.81%;
+}
+
+@media (max-width: 860px) {
+  .desktopOnly {
+    display: none;
+  }
+  .mobileOnly {
+    display: block;
+  }
+}
