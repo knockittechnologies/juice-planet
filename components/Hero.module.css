@@ -21,36 +21,6 @@
   display: none;
 }
 
-.navOverlay {
-  position: absolute;
-  inset: 0;
-}
-
-.navOverlay a,
-.navOverlay span,
-.navOverlay button {
-  position: absolute;
-  top: 4.5%;
-  height: 3.5%;
-  display: block;
-  text-indent: -9999px;
-  overflow: hidden;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-.navOverlay span {
-  cursor: default;
-}
-
-.navAbout    { left: 34.50%; width: 5.45%; }
-.navJuices   { left: 42.43%; width: 4.03%; }
-.navStore    { left: 48.94%; width: 8.66%; }
-.navContact  { left: 60.03%; width: 4.87%; }
-.navShopMerch{ left: 86.18%; width: 11.65%; top: 3.71%; height: 5.02%; }
-
 .ctaOrder,
 .ctaMenu {
   position: absolute;
@@ -62,15 +32,15 @@
 .ctaOrder {
   left: 37.57%;
   width: 12.64%;
-  top: 81.25%;
-  height: 4.99%;
+  top: 79.40%;
+  height: 5.48%;
 }
 
 .ctaMenu {
   left: 51.67%;
   width: 10.48%;
-  top: 81.13%;
-  height: 5.23%;
+  top: 79.27%;
+  height: 5.75%;
 }
 
 /* Mobile CTA positions recalculated for the cropped hero-mobile image
